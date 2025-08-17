@@ -43,7 +43,6 @@ resource "aws_s3_object" "index_html" {
   key          = "index.html"
   source       = "index.html"
   content_type = "text/html"
-  acl          = "public-read"
 }
 
 output "website_url" {
